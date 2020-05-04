@@ -12,7 +12,7 @@ if os.geteuid() == 0:
     def changebtn():
 
         file = open(r"/etc/apt/apt.conf", "w+")
-        data = [f'Acquire::http::proxy "http://{addressvalue.get()}:{portvalue.get()}";\n',f'Acquire::https::proxy "https://{addressvalue.get()}:{portvalue.get()}";' ]  
+        data = [f'Acquire::http::proxy "http://{addressvalue.get()}:{portvalue.get()}";\n',f'Acquire::https::proxy "https://{addressvalue.get()}:{portvalue.get()}";\n',f'Acquire::ftp::proxy "ftp://{addressvalue.get()}:{portvalue.get()}";\n',f'Acquire::socks::proxy "socks://{addressvalue.get()}:{portvalue.get()}";\n' ]  
         file.writelines(data)
         print(f'Address : {addressvalue.get()}')
         print(f'Port : {portvalue.get()}')
