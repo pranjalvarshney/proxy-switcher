@@ -5,6 +5,6 @@
   - RUN "python3 main.py"
   - Enter your password (Root access is required)
   - Enter proxy address and port
-  - Click Change to save
+  - Click Change to save or
   - Click Reset to remove proxy
   - Done
